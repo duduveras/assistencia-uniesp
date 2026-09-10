@@ -17,8 +17,7 @@ public class ClienteController {
     }
 
     @PostMapping
-    public ResponseEntity<ClienteEntity> cadastrar(
-            @RequestBody ClienteRequest request) {
+    public ResponseEntity<ClienteEntity> cadastrar(@RequestBody ClienteRequest request) {
 
         ClienteEntity cliente = clienteService.cadastrar(request);
 
