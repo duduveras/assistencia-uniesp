@@ -1,8 +1,6 @@
 package br.edu.uniesp.assistencia.internal.cliente.dto;
 
-public record ClienteRequest(
+public record CriarClienteResponse(
         String nome,
-        String cpf,
-        String email
-) {
+        String email) {
 }
